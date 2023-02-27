@@ -1,0 +1,126 @@
+body {
+    background-size: 210vh;
+    margin: 0;
+    font-family: cursive;
+    color: yellow;
+    
+}
+
+h1{
+    display: block;
+    position: center;
+    width: 100%;
+    background-color: crimson;
+    text-align: center;
+       
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto; 
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+      
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+    border: 5px black solid;
+    
+    
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/19/14/09/ps4-2326616_640.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/14/20/51/xbox-360-e-1200222_960_720.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/16/13/11/sony-ps2-console-5050540_960_720.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/04/18/19/video-game-console-2202666_960_720.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/14/20/37/game-console-playstation-3-1200184_960_720.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/17/01/25/nes-2649705_960_720.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/15/17/48/nintendo-game-boy-1201692_960_720.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://cdn.pixabay.com/photo/2012/10/26/01/57/game-console-63063_960_720.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/04/18/10/video-game-console-2202594_960_720.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+
+}
+
+footer{
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    background-color: rgb(255, 29, 4);
+    text-align: center;
+    padding: 10px;
+}
